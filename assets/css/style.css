@@ -91,29 +91,59 @@ header nav ul li a:hover {
     align-items: center;
     column-gap: 10%;
     background-color: var(--primary-color);
-    height: 400px
+    width: 100%;
+    margin: 0 auto
 }
 
-.about h2 {
-    flex: 2 0 100%;
+.about h2{
+    flex: 5 0 100%;
     align-self: center;
     color: var(--tertiary-color);
     border-bottom:rgb(181, 247, 209) solid 1px;
-    font
+    font-size: 45px;
 }
 
 #photo-of-me {
-  height: 50%;
-  width: 50%;
-  border: 5px solid var(--accent-2)
-  
-}
-.me article p {
-    align-self: center
+  height: auto;
+  width: 60%;
+  border: 5px solid var(--accent-2);
 }
 
+
 .me article {
-    flex: 1 
+   flex: 1;
+    justify-content: flex-start;
+}
+
+#work h2 {
+
+}
+
+.work-samples{
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: 100%;
+   margin: 0 auto
+}
+
+.work-sample{
+    margin: 15px;
+    flex: 1;
+}
+
+.work-sample img {
+    width: 70%;
+    height: auto;
+}
+
+#run-buddy {
+   width: 100%;
+}
+
+#run-buddy img {
+ width: 100%;
+ height: auto;
 }
 
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
