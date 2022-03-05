@@ -18,15 +18,187 @@ body {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+
 /* header section */
 
 header {
     padding: 20px 35px;
     background-color: var(--primary-color);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
     z-index:9999;
 }
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color:var(--secondary-color);
+    text-shadow: 2px 2px 3px rgb(230, 232, 230);
+}
+
+header h1 span {
+    font-weight: bolder;
+    font-size: 40px;
+    color: var(--accent-1)
+  }
+
+.subhead {
+    opacity: 0%;
+}
+
+header h1:hover + .subhead{
+    opacity: 100%;
+    transition:opacity 5s;
+    font-size: 35px;
+    color: var(--secondary-color);
+}
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-size: 2vw;
+    text-shadow: 0.5px 0.5px 1px var(--tertiary-color);
+    transition: 0.2s;
+    border-radius: 30px;
+}
+
+header nav ul li a:hover {
+    background: rgb(93, 115, 126, 0.8);
+    color: var(--accent-1);
+    text-shadow: none;
+}
+
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+  @media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+
+    header .subhead{ 
+       display: none
+    }
+  
+    header nav ul {
+      margin-top: 40px;
+      width: 100%;
+      justify-content: center;
+      
+    }
+  
+    header nav ul li a {
+      font-size: 15px;
+      border: 0;
+      margin: 0;
+      border-radius: 50px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+  
+    #about-me{
+      width: 100%;
+      text-align: center;
+    }
+  
+    .work-title {
+      width: 80%;
+    }
+    
+    .work-title {
+      flex: 0 70%;
+    }
+   
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+  
+    .step h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+  
+    .step-info {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .step-img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .step-text {
+      flex: 100%;  
+    }
+  
+    .trainer-bio h3, .trainer-bio h4 {
+      display: block;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .hero-form button {
+      width: 100%;
+    }
+  
+    .section-title {
+      width: 95%;
+    }
+  
+    .intro p {
+      width: 100%;
+    }
+  
+    .trainer {
+      flex: 0 100%;
+    }
+  
+    .contact-info {
+      text-align: center;
+    }
+  
+    .contact-info > * {
+      flex: 0 100%;
+    }
+  
+    .contact-form {
+      order: 3;
+    }
+  }
+  
