@@ -1,0 +1,32 @@
+:root {
+    --primary-color: rgb(0, 21, 36);
+    --secondary-color: rgb(93, 115, 126);
+    --tertiary-color: rgb(230, 232, 230);
+    --accent-1: rgb(112, 61, 87);
+    --accent-2: rgb(188, 75, 81);
+}
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* header section */
+
+header {
+    padding: 20px 35px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index:9999;
+}
