@@ -104,6 +104,7 @@ header nav ul li a:hover {
     color: var(--tertiary-color);
     border-bottom:rgb(181, 247, 209) solid 1px;
     font-size: 45px;
+    margin-left: 20px;
 }
 
 .biography img {
@@ -185,7 +186,7 @@ header nav ul li a:hover {
     padding: 1px 10px;
     background-color: rgb(0, 21, 36, 0.5);
     margin: 0 auto;
-    width: 30%
+    width: 40%
 }
 
 .work-title h3 {
@@ -196,6 +197,7 @@ header nav ul li a:hover {
     position: absolute;
     bottom: 10px;
     left: 16px;
+    width: 20%
 }
 
 #run-buddy-title h3 {
