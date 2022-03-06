@@ -347,7 +347,8 @@ header nav ul li a:hover {
   .biography img{
 
     width: 70%;
-    height: auto
+    height: auto;
+    margin: 0 auto;
     
   }
 
