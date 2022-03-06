@@ -110,8 +110,12 @@ header nav ul li a:hover {
   height: auto;
   width: 60%;
   border: 2px solid var(--accent-2);
+  margin: 10px 20%;
 }
 
+.biography p {
+  text-align: center;
+}
 
 .me article {
    flex: 1;
@@ -349,14 +353,13 @@ header nav ul li a:hover {
       font-size:30px;
     }
   
-    .work-title h3{
-      font-size: 7px
-    }
+   .work-title {
+     width: 50%
+   }
 
-    .work-title p{
-      font-size: 4px
-    }
-  }
+   #run-buddy-title {
+     width: 30%
+   }
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
@@ -368,12 +371,24 @@ header nav ul li a:hover {
     #run-buddy{
       flex: 0 100%;
       width: 100%;
-      margin: 0 auto
+      margin: 0 auto;
     }
 
   
    
     .work-sample {
-      flex: 0 40%
+      flex: 0 40%;
     }
+  }
+
+  #run-buddy-title {
+    width: 20%
+  }
+
+  #run-buddy-title h3 {
+    font-size: 12px;
+  }
+
+  #run-buddy-title p {
+    font-size: 8px;
   }
