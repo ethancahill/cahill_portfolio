@@ -1,117 +1,174 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <script src="./assets/javascript/effects.js"></script>
-        <link href="http://fonts.cdnfonts.com/css/slater-industrial" rel="stylesheet">
-        <title>Ethan Cahill Professional Portfolio</title>
-    </head>
-    <body>
-        <header>
-            <h1>
-             <span>Ethan</span> Cahill
-            </h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/javascript/effects.js"></script>
+    <link
+      href="http://fonts.cdnfonts.com/css/slater-industrial"
+      rel="stylesheet"
+    />
+    <title>Ethan Cahill Professional Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1><span>Ethan</span> Cahill</h1>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/ethan-cahill-49b485231">Resume</a>
-                </li>
-            </ul>
-        </nav>
-        </header>
-        <section id="about-me" class="me">
-            <div class="about">
-                <h2>
-                    About Me
-                </h2>
-            </div>
-            <article class="biography">
-                <img src="./assets/img/photo_of_me.jpg" alt="Me and my wife at Disney's California Adventure in front of a ferris wheel" id="photo-of-me" />
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, provident et harum nam quae porro quas amet iusto, sed doloribus voluptatem autem! Placeat cumque autem nam harum illum, quasi ducimus.</p>
-            </article>
-        </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about-me">About Me</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>
+          <li>
+            <a href="#contact-me">Contact Me</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/ethan-cahill-49b485231"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="about-me" class="me">
+      <div class="about">
+        <h2>About Me</h2>
+      </div>
+      <article class="biography">
+        <img
+          src="./assets/img/photo_of_me.jpg"
+          alt="Me and my wife at Disney's California Adventure in front of a ferris wheel"
+          id="photo-of-me"
+        />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+          provident et harum nam quae porro quas amet iusto, sed doloribus
+          voluptatem autem! Placeat cumque autem nam harum illum, quasi ducimus.
+        </p>
+      </article>
+    </section>
 
-        <section id="work" class="work">
-            <h2>Work Samples</h2>
-            <div class="work-samples">
+    <section id="work" class="work container">
+      <h2>Work Samples</h2>
+      <div class="work-samples row align-items-start">
+        <article class="work-sample col-12" id="evening-eats">
+          <a
+            href="https://ethancahill.github.io/Interactive_Front_End_Project/"
+            target="_blank"
+            rel="noreferrer nopener"
+          >
+            <span class="link"></span>
+          </a>
+          <img
+            src="./assets/img/evening_eats.png"
+            alt="sample of my evening eats project"
+          />
+          <div class="work-title" id="evening-eats-title">
+            <h3>Evening Eats</h3>
+            <p>HTML, CSS, JavaScript, Google API, and JQuery</p>
+          </div>
+        </article>
 
-            <article id="run-buddy">
-                <a href="https://ethancahill.github.io/run-buddy/" target="_blank" rel="noreferrer nopener">
-                    <span class="link"></span>
-                  </a>
-                <img src="./assets/img/run_buddy_img.jpg" alt="sample of my run buddy website" >
-                <div class="work-title" id="run-buddy-title">
-                    <h3>Run Buddy</h3>
-                    <p>HTML and CSS</p>
-                </div>
-            </article>
+        <article class="work-sample col-12" id="dad-joke">
+          <a
+            href="https://secret-reef-53642.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer nopener"
+          >
+            <span class="link"></span>
+          </a>
+          <img
+            src="./assets/img/dad_joke_home.png"
+            alt="Dad Joke Generator Site Image"
+          />
+          <div class="work-title" id="dad-joke-title">
+            <h3>Dad Joke Generator</h3>
+            <p>Node.js, Express.js, Handlebars, MySQL, Sequelize, and CSS</p>
+          </div>
+        </article>
 
-            <article class="work-sample"  id="robot-battle">
-                <a href="https://www.google.com" target="_blank" rel="noreferrer nopener">
-                    <span class="link"></span>
-                  </a>
-                <img src="./assets/img/chatbot.jpeg" alt="robot ready to battle">
-                <div class="work-title">
-                    <h3>Robot Battle</h3>
-                    <p>HTML and JavaScript</p>
-                </div>
-            </article>
+        <article
+          class="work-sample col-3"
+          id="new1"
+          target="_blank"
+          rel="noreferrer nopener"
+        >
+          <a href="https://www.google.com">
+            <span class="link"></span>
+          </a>
+          <img
+            src="./assets/img/cahill_sleep.jpeg"
+            alt="me, dreaming of new ideas"
+          />
+          <div class="work-title">
+            <h3>Site Not Active</h3>
+            <p>Coming Soon</p>
+          </div>
+        </article>
 
-            <article class="work-sample"  id="new1" target="_blank" rel="noreferrer nopener">
-                <a href="https://www.google.com">
-                    <span class="link"></span>
-                  </a>
-                <img src="./assets/img/cahill_sleep.jpeg" alt="me, dreaming of new ideas">
-                <div class="work-title">
-                    <h3>Site Not Active</h3>
-                    <p>Coming Soon</p>
-                </div>
-            </article>
-        
-            <article class="work-sample"  id="new2" target="_blank" rel="noreferrer nopener">
-                <a href="https://www.google.com">
-                    <span class="link"></span>
-                  </a>
-                <img src="./assets/img/cahill_sleep.jpeg" alt="me, dreaming of new ideas">
-                <div class="work-title">
-                    <h3>Site Not Active</h3>
-                    <p>Coming Soon</p>
-                </div>
-            </article>
+        <article
+          class="work-sample col-3"
+          id="new2"
+          target="_blank"
+          rel="noreferrer nopener"
+        >
+          <a href="https://www.google.com">
+            <span class="link"></span>
+          </a>
+          <img
+            src="./assets/img/cahill_sleep.jpeg"
+            alt="me, dreaming of new ideas"
+          />
+          <div class="work-title">
+            <h3>Site Not Active</h3>
+            <p>Coming Soon</p>
+          </div>
+        </article>
 
-            <article class="work-sample"  id="new3" target="_blank" rel="noreferrer nopener">
-                <a href="https://www.google.com">
-                    <span class="link"></span>
-                  </a>
-                <img src="./assets/img/cahill_sleep.jpeg" alt="me, dreaming of new ideas">
-                <div class="work-title">
-                    <h3>Site Not Active</h3>
-                    <p>Coming Soon</p>
-                </div>
-            </article>
-
-            </div>
-        </section>
+        <article
+          class="work-sample col-3"
+          id="new3"
+          target="_blank"
+          rel="noreferrer nopener"
+        >
+          <a href="https://www.google.com">
+            <span class="link"></span>
+          </a>
+          <img
+            src="./assets/img/cahill_sleep.jpeg"
+            alt="me, dreaming of new ideas"
+          />
+          <div class="work-title">
+            <h3>Site Not Active</h3>
+            <p>Coming Soon</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
     <footer id="contact-me">
-        <h2>Contact Me</h2>
-        <div class="contact">
+      <h2>Contact Me</h2>
+      <div class="contact">
         <a href="tel:+19419618915">941-961-8915</a>
         <a href="mailto:andersmith29@gmail.com">andersmith29@gmail.com</a>
-        <a href="https://github.com/ethancahill" target="_blank" rel="noreferrer nopener">GitHub</a>
-        </div>
+        <a
+          href="https://github.com/ethancahill"
+          target="_blank"
+          rel="noreferrer nopener"
+          >GitHub</a
+        >
+      </div>
     </footer>
-    </body>
+  </body>
 </html>
